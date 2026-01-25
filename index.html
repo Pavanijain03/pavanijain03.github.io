@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,108 +19,164 @@
 
 <main>
 
-<!-- ================= SIDEBAR ================= -->
-<aside class="sidebar" data-sidebar>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" data-sidebar>
 
-  <div class="sidebar-info">
-    <figure class="avatar-box">
-      <img src="./assets/images/my-avatar.png" alt="Pavani Jain" width="80">
-    </figure>
+    <div class="sidebar-info">
 
-    <div class="info-content">
-      <h1 class="name">Pavani Jain</h1>
-      <p class="title">AI Engineer | ML Engineer</p>
+      <figure class="avatar-box">
+        <img src="./assets/images/my-avatar.png" alt="Pavani Jain" width="80">
+      </figure>
+
+      <div class="info-content">
+        <h1 class="name">Pavani Jain</h1>
+        <p class="title">AI Engineer | ML Engineer</p>
+      </div>
+
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
+
     </div>
 
-    <button class="info_more-btn" data-sidebar-btn>
-      <span>Show Contacts</span>
-    </button>
+    <div class="sidebar-info_more">
+
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:your@email.com" class="contact-link">your@email.com</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+16175551234" class="contact-link">+1 617-555-1234</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Date of Birth</p>
+            <time datetime="2005-01-03">January 3, 2005</time>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Boston, MA, USA</address>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://github.com/" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://linkedin.com/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <button class="navbar-link active" data-nav-link>About</button>
+        </li>
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Resume</button>
+        </li>
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Portfolio</button>
+        </li>
+        <li class="navbar-item">
+          <button class="navbar-link" data-nav-link>Contact</button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="about active" data-page="about">
+      <header>
+        <h2 class="h2 article-title">About Me</h2>
+      </header>
+
+      <section class="about-text">
+        <p>
+          I am a Master’s student in Artificial Intelligence at Northeastern University with strong interests in
+          Machine Learning, Data Science, and Deep Learning.
+        </p>
+        <p>
+          I enjoy building intelligent systems, working with real-world data, and applying AI to solve practical problems.
+        </p>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="resume" data-page="resume">
+      <header>
+        <h2 class="h2 article-title">Resume</h2>
+      </header>
+      <p style="padding:20px">Resume content goes here.</p>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article class="portfolio" data-page="portfolio">
+      <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+      </header>
+      <p style="padding:20px">Projects will be listed here.</p>
+    </article>
+
+    <!-- CONTACT -->
+    <article class="contact" data-page="contact">
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+      <p style="padding:20px">Contact form or details here.</p>
+    </article>
+
   </div>
-
-  <div class="sidebar-info_more">
-
-    <ul class="contacts-list">
-
-      <li class="contact-item">
-        <p class="contact-title">Email</p>
-        <a href="mailto:jain.pav@northeastern.edu">jain.pav@northeastern.edu</a>
-      </li>
-
-      <li class="contact-item">
-        <p class="contact-title">Phone</p>
-        <a href="tel:+16175169584">+1 (617) 516-9584</a>
-      </li>
-
-      <li class="contact-item">
-        <p class="contact-title">Date of Birth</p>
-        <time datetime="2005-01-03">January 3, 2005</time>
-      </li>
-
-      <li class="contact-item">
-        <p class="contact-title">Location</p>
-        <address>Boston, MA, USA</address>
-      </li>
-
-    </ul>
-
-    <ul class="social-list">
-      <li><a href="https://github.com/Pavanijain03" target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/in/pavani-jain-ab6488204" target="_blank">LinkedIn</a></li>
-    </ul>
-
-  </div>
-</aside>
-
-<!-- ================= MAIN CONTENT ================= -->
-<div class="main-content">
-
-<!-- NAVBAR -->
-<nav class="navbar">
-  <ul class="navbar-list">
-    <li><button class="navbar-link active" data-nav-link data-target="about">About</button></li>
-    <li><button class="navbar-link" data-nav-link data-target="resume">Resume</button></li>
-    <li><button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button></li>
-    <li><button class="navbar-link" data-nav-link data-target="contact">Contact</button></li>
-  </ul>
-</nav>
-
-<!-- ABOUT -->
-<article class="about active" data-page="about">
-  <h2>About Me</h2>
-  <p>
-    I am a Master’s student in Artificial Intelligence at Northeastern University with strong interests in
-    Machine Learning, Data Science, and Deep Learning.
-  </p>
-</article>
-
-<!-- RESUME -->
-<article class="resume" data-page="resume">
-  <h2>Resume</h2>
-  <p><b>Northeastern University</b> — MS in Artificial Intelligence</p>
-  <p><b>Verve Bridge</b> — Data Analyst Intern (EDA, Tableau, Python)</p>
-</article>
-
-<!-- PORTFOLIO -->
-<article class="portfolio" data-page="portfolio">
-  <h2>Projects</h2>
-  <ul>
-    <li>Credit Card Fraud Detection (Deep Learning)</li>
-    <li>Amazon Product Recommendation System (ML)</li>
-    <li>Netflix Usage Analysis (SQL, Tableau)</li>
-  </ul>
-</article>
-
-<!-- CONTACT -->
-<article class="contact" data-page="contact">
-  <h2>Contact</h2>
-  <p>Email: jain.pav@northeastern.edu</p>
-  <p>LinkedIn & GitHub linked in sidebar</p>
-</article>
-
-</div>
 </main>
 
 <script src="./assets/js/script.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
 
