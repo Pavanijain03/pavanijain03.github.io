@@ -104,27 +104,28 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-/* ================= PAGE NAVIGATION (FINAL FIX) ================= */
+/* ========== PAGE NAVIGATION (ABSOLUTE FIX) ========== */
+
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 navigationLinks.forEach(link => {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", () => {
 
-    const targetPage = this.getAttribute("data-page-btn");
+    const target = link.textContent.trim().toLowerCase();
 
     pages.forEach(page => {
-      if (page.dataset.page === targetPage) {
+      page.classList.remove("active");
+      if (page.dataset.page === target) {
         page.classList.add("active");
         window.scrollTo(0, 0);
-      } else {
-        page.classList.remove("active");
       }
     });
 
     navigationLinks.forEach(btn => btn.classList.remove("active"));
-    this.classList.add("active");
+    link.classList.add("active");
 
   });
 });
+
 
