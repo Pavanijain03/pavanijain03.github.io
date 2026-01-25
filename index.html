@@ -17,443 +17,427 @@
 
 <body>
 
-<main>
+  <main>
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar" data-sidebar>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
 
-    <div class="sidebar-info">
-      <figure class="avatar-box">
-        <img src="./assets/images/memoji.jpg" alt="Pavani Jain" width="80">
-      </figure>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <!-- IMPORTANT: make sure the file name matches exactly in assets/images -->
+          <img src="./assets/images/memoji.jpg" alt="Pavani Jain" width="80">
+        </figure>
 
-      <div class="info-content">
-        <h1 class="name">Pavani Jain</h1>
-        <p class="title">AI Engineer | ML Engineer</p>
+        <div class="info-content">
+          <h1 class="name">Pavani Jain</h1>
+          <p class="title">AI Engineer | ML Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
       </div>
 
-      <button class="info_more-btn" data-sidebar-btn>
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
-      </button>
-    </div>
+      <div class="sidebar-info_more">
 
-    <div class="sidebar-info_more">
+        <div class="separator"></div>
 
-      <div class="separator"></div>
+        <ul class="contacts-list">
 
-      <ul class="contacts-list">
-
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="mail-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Email</p>
-            <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
-              jain.pav@northeastern.edu
-            </a>
-          </div>
-        </li>
-
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="phone-portrait-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Phone</p>
-            <a href="tel:+16175169584" class="contact-link">
-              +1 (617) 516-9584
-            </a>
-          </div>
-        </li>
-
-        <!-- DOB RESTORED -->
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="calendar-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Date of Birth</p>
-            <time datetime="2005-01-03">January 3, 2005</time>
-          </div>
-        </li>
-
-        <li class="contact-item">
-          <div class="icon-box">
-            <ion-icon name="location-outline"></ion-icon>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">Location</p>
-            <address>Boston, MA, USA</address>
-          </div>
-        </li>
-
-      </ul>
-
-      <div class="separator"></div>
-
-      <ul class="social-list">
-        <li class="social-item">
-          <a href="https://github.com/Pavanijain03" target="_blank" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-        <li class="social-item">
-          <a href="https://www.linkedin.com/in/pavani-jain-ab6488204/" target="_blank" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </aside>
-
-  <!-- MAIN CONTENT -->
-  <div class="main-content">
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
-      </ul>
-    </nav>
-
-    <!-- ABOUT -->
-    <article class="about active" data-page="about">
-
-
-      <header>
-        <h2 class="h2 article-title">About Me</h2>
-      </header>
-
-      <section class="about-text">
-        <p>
-          Master’s student in Artificial Intelligence at Northeastern University with a strong foundation in
-          Machine Learning, Data Science, and Deep Learning.
-        </p>
-        <p>
-          Passionate about solving real-world problems using data-driven and AI-powered solutions.
-        </p>
-      </section>
-
-      <!-- WHAT I'M DOING -->
-      <section class="service">
-        <h3 class="h3 service-title">What I’m Doing</h3>
-
-        <ul class="service-list">
-
-          <li class="service-item">
-            <div class="service-icon-box">
-              <img src="./assets/images/icon-design.svg" width="40">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Machine Learning</h4>
-              <p class="service-item-text">
-                Predictive modeling and recommendation systems.
-              </p>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
+                jain.pav@northeastern.edu
+              </a>
             </div>
           </li>
 
-          <li class="service-item">
-            <div class="service-icon-box">
-              <img src="./assets/images/icon-dev.svg" width="40">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Deep Learning</h4>
-              <p class="service-item-text">
-                Neural networks using TensorFlow and PyTorch.
-              </p>
-            </div>
-          </li>
-
-          <li class="service-item">
-            <div class="service-icon-box">
-              <img src="./assets/images/icon-app.svg" width="40">
-            </div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Data Analysis</h4>
-              <p class="service-item-text">
-                EDA, visualization, and insight generation.
-              </p>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+16175169584" class="contact-link">
+                +1 (617) 516-9584
+              </a>
             </div>
           </li>
 
-          <li class="service-item">
-            <div class="service-icon-box">
-              <img src="./assets/images/icon-photo.svg" width="40">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
             </div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">AI Research</h4>
-              <p class="service-item-text">
-                Applied AI and real-world datasets.
-              </p>
+            <div class="contact-info">
+              <p class="contact-title">Date of Birth</p>
+              <time datetime="2005-01-03">January 3, 2005</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Boston, MA, USA</address>
             </div>
           </li>
 
         </ul>
-      </section>
 
-    </article>
+        <div class="separator"></div>
 
-    <!-- RESUME -->
-    <article class="resume" data-page="resume">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/Pavanijain03" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/pavani-jain-ab6488204/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
 
-      <header>
-        <h2 class="h2 article-title">Resume</h2>
-      </header>
+      </div>
+    </aside>
 
-      <!-- EDUCATION -->
-      <section class="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- NAVBAR (PERMANENT FIX: uses data-target) -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link data-target="about">About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="portfolio">Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Master’s student in Artificial Intelligence at Northeastern University with a strong foundation in
+            Machine Learning, Data Science, and Deep Learning.
+          </p>
+          <p>
+            Passionate about solving real-world problems using data-driven and AI-powered solutions.
+          </p>
+        </section>
+
+        <!-- WHAT I'M DOING -->
+        <section class="service">
+          <h3 class="h3 service-title">What I’m Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Machine Learning" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+                <p class="service-item-text">Predictive modeling and recommendation systems.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Deep Learning" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Deep Learning</h4>
+                <p class="service-item-text">Neural networks using TensorFlow and PyTorch.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Data Analysis" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+                <p class="service-item-text">EDA, visualization, and insight generation.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="AI Research" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Research</h4>
+                <p class="service-item-text">Applied AI and real-world datasets.</p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- EDUCATION -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
           </div>
-          <h3 class="h3">Education</h3>
-        </div>
 
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">MS in Artificial Intelligence</h4>
-            <span>Northeastern University</span>
-            <p class="timeline-text">
-              Focus on Machine Learning, Deep Learning, and Data Science.
-            </p>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">MS in Artificial Intelligence</h4>
+              <span>Northeastern University</span>
+              <p class="timeline-text">
+                Focus on Machine Learning, Deep Learning, and Data Science.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA)</h4>
+              <span>VIPS, GGSIPU</span>
+              <p class="timeline-text">
+                Programming, Data Structures, Analytics, and Databases.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- SKILLS (progress style like template) -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming (Python, R, Java, C, HTML, CSS, Bash)</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning & AI</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Deep Learning & Neural Networks</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Science (EDA, Statistics, Visualization)</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Libraries & Frameworks (PyTorch, TensorFlow, scikit-learn)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Databases & Data Engineering (SQL, MySQL, ETL)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tools & Platforms (Tableau, AWS, Git, Linux)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+      <!-- ✅ IMPORTANT: Resume article is now properly CLOSED -->
+
+      <!-- PROJECTS -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <ul class="project-list">
+
+          <li class="project-item active">
+            <a href="https://github.com/Pavanijain03/netflix-usage-analysis" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-1.jpg" alt="Netflix Usage Analysis" loading="lazy">
+              </figure>
+              <h3 class="project-title">Netflix Usage Analysis</h3>
+              <p class="project-category">Data Analysis • Tableau</p>
+            </a>
           </li>
 
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA)</h4>
-            <span>VIPS, GGSIPU</span>
-            <p class="timeline-text">
-              Programming, Data Structures, Analytics, and Databases.
-            </p>
+          <li class="project-item active">
+            <a href="https://github.com/Pavanijain03/amazon-product-recommendation" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-2.png" alt="Amazon Product Recommendation" loading="lazy">
+              </figure>
+              <h3 class="project-title">Amazon Product Recommendation</h3>
+              <p class="project-category">Machine Learning</p>
+            </a>
           </li>
-        </ol>
-      </section>
 
-      <!-- SKILLS -->
-<section class="skill">
+          <li class="project-item active">
+            <a href="https://github.com/Pavanijain03/credit-card-fraud-detection" target="_blank">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/project-3.jpg" alt="Credit Card Fraud Detection" loading="lazy">
+              </figure>
+              <h3 class="project-title">Credit Card Fraud Detection</h3>
+              <p class="project-category">Anomaly Detection</p>
+            </a>
+          </li>
 
-  <h3 class="h3 skills-title">My Skills</h3>
+        </ul>
 
-  <ul class="skills-list content-card">
+      </article>
 
-    <!-- Programming -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Programming (Python, R, Java, C, HTML, CSS, Bash)</h5>
-        <data value="90">90%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 90%;"></div>
-      </div>
-    </li>
+      <!-- CONTACT (NOT active by default) -->
+      <article class="contact" data-page="contact">
 
-    <!-- Machine Learning -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Machine Learning & AI</h5>
-        <data value="85">85%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 85%;"></div>
-      </div>
-    </li>
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-    <!-- Deep Learning -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Deep Learning & Neural Networks</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%;"></div>
-      </div>
-    </li>
+        <section class="contact-list" style="margin-bottom: 30px;">
+          <ul class="contacts-list">
 
-    <!-- Data Science -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Data Science (EDA, Statistics, Visualization)</h5>
-        <data value="85">85%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 85%;"></div>
-      </div>
-    </li>
-
-    <!-- Libraries -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Libraries & Frameworks (PyTorch, TensorFlow, scikit-learn)</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%;"></div>
-      </div>
-    </li>
-
-    <!-- Databases -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Databases & Data Engineering (SQL, MySQL, ETL)</h5>
-        <data value="75">75%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 75%;"></div>
-      </div>
-    </li>
-
-    <!-- Tools -->
-    <li class="skills-item">
-      <div class="title-wrapper">
-        <h5 class="h5">Tools & Platforms (Tableau, AWS, Git, Linux)</h5>
-        <data value="80">80%</data>
-      </div>
-      <div class="skill-progress-bg">
-        <div class="skill-progress-fill" style="width: 80%;"></div>
-      </div>
-    </li>
-
-  </ul>
-
-</section>
-
-
-    <!-- PORTFOLIO -->
-    <article class="portfolio" data-page="portfolio">
-
-      <header>
-        <h2 class="h2 article-title">Projects</h2>
-      </header>
-
-      <ul class="project-list">
-
-        <li class="project-item active">
-          <a href="https://github.com/Pavanijain03/netflix-usage-analysis" target="_blank">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
-              <img src="./assets/images/project-1.jpg" loading="lazy">
-            </figure>
-            <h3 class="project-title">Netflix Usage Analysis</h3>
-            <p class="project-category">Data Analysis • Tableau</p>
-          </a>
-        </li>
-
-        <li class="project-item active">
-          <a href="https://github.com/Pavanijain03/amazon-product-recommendation" target="_blank">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
+                  jain.pav@northeastern.edu
+                </a>
               </div>
-              <img src="./assets/images/project-2.png" loading="lazy">
-            </figure>
-            <h3 class="project-title">Amazon Product Recommendation</h3>
-            <p class="project-category">Machine Learning</p>
-          </a>
-        </li>
+            </li>
 
-        <li class="project-item active">
-          <a href="https://github.com/Pavanijain03/credit-card-fraud-detection" target="_blank">
-            <figure class="project-img">
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
               </div>
-              <img src="./assets/images/project-3.jpg" loading="lazy">
-            </figure>
-            <h3 class="project-title">Credit Card Fraud Detection</h3>
-            <p class="project-category">Anomaly Detection</p>
-          </a>
-        </li>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/pavani-jain-ab6488204/" target="_blank" class="contact-link">
+                  linkedin.com/in/pavani-jain
+                </a>
+              </div>
+            </li>
 
-      </ul>
+          </ul>
+        </section>
 
-    </article>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Send a Message</h3>
 
-  <article class="contact active" data-page="contact">
+          <form action="https://formspree.io/f/xpqdajnr" method="POST" class="form">
 
-  <header>
-    <h2 class="h2 article-title">Contact</h2>
-  </header>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full Name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+            </div>
 
-  <!-- CONTACT INFO -->
-  <section class="contact-list" style="margin-bottom: 30px;">
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
 
-    <ul class="contacts-list">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+            <input type="text" name="_gotcha" style="display:none">
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
-            jain.pav@northeastern.edu
-          </a>
-        </div>
-      </li>
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">LinkedIn</p>
-          <a href="https://www.linkedin.com/in/pavani-jain-ab6488204/"
-             target="_blank"
-             class="contact-link">
-            linkedin.com/in/pavani-jain
-          </a>
-        </div>
-      </li>
+          </form>
+        </section>
 
-    </ul>
+      </article>
 
-  </section>
+    </div>
+  </main>
 
-  <!-- CONTACT FORM -->
-  <section class="contact-form">
-
-    <h3 class="h3 form-title">Send a Message</h3>
-
-    <form action="https://formspree.io/f/xpqdajnr" method="POST" class="form">
-
-      <div class="input-wrapper">
-        <input type="text" name="name" class="form-input" placeholder="Full Name" required>
-        <input type="email" name="email" class="form-input" placeholder="Email Address" required>
-      </div>
-
-      <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
-
-      <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-      <input type="text" name="_gotcha" style="display:none">
-
-      <button class="form-btn" type="submit">
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>Send Message</span>
-      </button>
-
-    </form>
-
-  </section>
-
-</article>
-
-
-
-  </div>
-</main>
-
-<script src="./assets/js/script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
 
 
