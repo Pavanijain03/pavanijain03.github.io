@@ -349,86 +349,66 @@
   </header>
 
   <!-- CONTACT INFO -->
-  <section class="contact-list">
+<section class="contact-list" style="margin-bottom: 30px;">
 
-    <ul class="contacts-list">
+  <ul class="contacts-list">
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
-            jain.pav@northeastern.edu
-          </a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">LinkedIn</p>
-          <a
-            href="https://www.linkedin.com/in/pavani-jain-ab6488204/"
-            target="_blank"
-            class="contact-link">
-            linkedin.com/in/pavani-jain
-          </a>
-        </div>
-      </li>
-
-    </ul>
-
-  </section>
-
-  <!-- CONTACT FORM -->
-  <section class="contact-form" style="margin-top: 30px;">
-
-    <h3 class="h3 form-title">Send a Message</h3>
-
-    <form
-      action="https://formspree.io/f/xpqdajnr"
-      method="POST"
-      class="form">
-
-      <div class="input-wrapper">
-        <input
-          type="text"
-          name="name"
-          class="form-input"
-          placeholder="Full Name"
-          required>
-
-        <input
-          type="email"
-          name="email"
-          class="form-input"
-          placeholder="Email Address"
-          required>
+    <li class="contact-item">
+      <div class="icon-box">
+        <ion-icon name="mail-outline"></ion-icon>
       </div>
+      <div class="contact-info">
+        <p class="contact-title">Email</p>
+        <a href="mailto:jain.pav@northeastern.edu" class="contact-link">
+          jain.pav@northeastern.edu
+        </a>
+      </div>
+    </li>
 
-      <textarea
-        name="message"
-        class="form-input"
-        placeholder="Your Message"
-        required></textarea>
+    <li class="contact-item">
+      <div class="icon-box">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </div>
+      <div class="contact-info">
+        <p class="contact-title">LinkedIn</p>
+        <a href="https://www.linkedin.com/in/pavani-jain-ab6488204/"
+           target="_blank"
+           class="contact-link">
+          linkedin.com/in/pavani-jain
+        </a>
+      </div>
+    </li>
 
-      <!-- Formspree extras -->
-      <input type="hidden" name="_subject" value="New Portfolio Contact Message">
-      <input type="text" name="_gotcha" style="display:none">
+  </ul>
 
-      <button class="form-btn" type="submit">
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>Send Message</span>
-      </button>
+</section>
 
-    </form>
+<!-- CONTACT FORM -->
+<section class="contact-form">
 
-  </section>
+  <h3 class="h3 form-title">Send a Message</h3>
 
+  <form action="https://formspree.io/f/xpqdajnr" method="POST" class="form">
+
+    <div class="input-wrapper">
+      <input type="text" name="name" class="form-input" placeholder="Full Name" required>
+      <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+    </div>
+
+    <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+    <!-- Formspree extras -->
+    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button class="form-btn" type="submit">
+      <ion-icon name="paper-plane"></ion-icon>
+      <span>Send Message</span>
+    </button>
+
+  </form>
+
+</section>
 </article>
 
 
