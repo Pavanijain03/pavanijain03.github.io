@@ -105,26 +105,23 @@ formInputs.forEach(input => {
   });
 });
 
-/* ---------- PAGE NAVIGATION (THIS FIXES YOUR ISSUE) ---------- */
+// page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-navigationLinks.forEach(link => {
-  link.addEventListener("click", () => {
+navigationLinks.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = btn.dataset.target;
 
-    const target = link.textContent.trim().toLowerCase();
-
-    pages.forEach(page => {
-      page.classList.remove("active");
-      if (page.dataset.page === target) {
-        page.classList.add("active");
-        window.scrollTo(0, 0);
-      }
+    pages.forEach((page) => {
+      page.classList.toggle("active", page.dataset.page === target);
     });
 
-    navigationLinks.forEach(btn => btn.classList.remove("active"));
-    link.classList.add("active");
+    navigationLinks.forEach((link) => {
+      link.classList.toggle("active", link === btn);
+    });
 
+    window.scrollTo(0, 0);
   });
 });
 
