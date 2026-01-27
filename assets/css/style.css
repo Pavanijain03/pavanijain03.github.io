@@ -2033,3 +2033,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: translateY(-3px);
   box-shadow: 0 14px 35px rgba(250, 204, 21, 0.55);
 }
+.resume-download-btn {
+  color: #111 !important;
+  text-decoration: none !important;
+}
